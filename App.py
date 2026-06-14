@@ -16,7 +16,7 @@ elif Modulo=='Modulo 2':
     columna1,columna2 = st.columns(2)
     with columna1:
         st.write('Estas en el modulo 2')
-        data=pd.read_excel('Data/Resultados.xlsx')  
+        data=pd.read_excel('Resultados.xlsx')  
         st.write(data)
     with columna2:
         figura=px.line(data_frame=data,x='Mes', y='Produccion Mensual')
